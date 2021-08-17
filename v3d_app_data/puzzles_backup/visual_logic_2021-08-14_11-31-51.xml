@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="683" scrolly="331.50000000000006" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="tBULbo2b=ms0jV5[bvXu" x="-730" y="-330">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="683" scrolly="331.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="brightnessContrast" id="+OaOU[BbV*|8-#3QE$v^" x="-710" y="-350">
+      <value name="BRIGHTNESS">
+        <shadow type="number_slider" id="In-)ZS.Sk.!PgeFIDKdP">
+          <field name="NUM" min="-5" max="5" step="0.1">0.05</field>
+        </shadow>
+      </value>
+      <value name="CONTRAST">
+        <shadow type="number_slider" id="c?Tz=o{Qm-SApt,Y-PsU">
+          <field name="NUM" min="-1" max="1" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="^pTD:3DIj,20iK6fT)Nd" x="-710" y="-250">
+      <value name="ID">
+        <shadow type="text" id="T10O-`WmvF8|WB~y-vSN">
+          <field name="TEXT">rotate</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="Bz|#-]k^ner/Qv)5^Ip0">
+          <field name="NUM">6</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id=".t8~WuycYukN]r?o)%@d">
+          <field name="NUM">Infinity</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id=",j[$.flyU7vvFm}1BV@{">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="L^xJE8T;7:U@wCEE3$7+">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="369.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

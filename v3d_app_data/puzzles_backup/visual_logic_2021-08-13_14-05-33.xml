@@ -1,0 +1,35 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="683" scrolly="331.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="683" scrolly="331.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="brightnessContrast" id="+OaOU[BbV*|8-#3QE$v^" x="-690" y="-270">
+      <value name="BRIGHTNESS">
+        <shadow type="number_slider" id="In-)ZS.Sk.!PgeFIDKdP">
+          <field name="NUM" min="-5" max="5" step="0.1">0.1</field>
+        </shadow>
+      </value>
+      <value name="CONTRAST">
+        <shadow type="number_slider" id="c?Tz=o{Qm-SApt,Y-PsU">
+          <field name="NUM" min="-1" max="1" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="refraction" id="-.~e#h=0w8cdj7,`8(N]" x="-750" y="-50">
+      <value name="MATERIAL">
+        <shadow type="materialList" id="*t8|y8vxg*V1`M[XfX0e">
+          <field name="FIELDNAME">Verge3D_Environment_World</field>
+        </shadow>
+      </value>
+      <value name="DISTANCE">
+        <shadow type="number_slider" id="yZkh]^+LS/RiqK6YubE.">
+          <field name="NUM" min="0" max="10" step="0.1">1</field>
+        </shadow>
+      </value>
+      <value name="RENDER_AFTER">
+        <shadow type="objectList" id="Izgz]4[T1m?B#y_#guwz">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="369.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

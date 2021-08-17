@@ -1,0 +1,106 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="683.0000000000002" scrolly="331.5000000000001" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="tBULbo2b=ms0jV5[bvXu" x="-730" y="-330">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="683" scrolly="331.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="brightnessContrast" id="+OaOU[BbV*|8-#3QE$v^" x="-710" y="-350">
+      <value name="BRIGHTNESS">
+        <shadow type="number_slider" id="In-)ZS.Sk.!PgeFIDKdP">
+          <field name="NUM" min="-5" max="5" step="0.1">0.05</field>
+        </shadow>
+      </value>
+      <value name="CONTRAST">
+        <shadow type="number_slider" id="c?Tz=o{Qm-SApt,Y-PsU">
+          <field name="NUM" min="-1" max="1" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="^pTD:3DIj,20iK6fT)Nd" x="-710" y="-250">
+      <value name="ID">
+        <shadow type="text" id="T10O-`WmvF8|WB~y-vSN">
+          <field name="TEXT">rotate</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="Bz|#-]k^ner/Qv)5^Ip0">
+          <field name="NUM">6</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id=".t8~WuycYukN]r?o)%@d">
+          <field name="NUM">Infinity</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id=",j[$.flyU7vvFm}1BV@{">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="L^xJE8T;7:U@wCEE3$7+">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="k0N:}XfTSk0yPzI[KtbX" x="-710" y="-130">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="XXGTm`6MqR}]f}G{iJn=">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="j;X{MwLrrf=H`=ntW?}l"/>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="LzIM!+ck`+Fjb_3Um0G2">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id=")PKwE6|+,d_P,GiS!Ci2">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setTimer" id="y7HCJME_f,8l?ePtS*yv">
+              <value name="ID">
+                <shadow type="text" id="2FNL3tj1}[+r}n{9q~Y^">
+                  <field name="TEXT">rotate</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="bl}pz;nD8i4Z^/4f.PYX">
+                  <field name="NUM">6</field>
+                </shadow>
+              </value>
+              <value name="REPEAT">
+                <shadow type="math_number" id="@Sn{#XRFSOji1/:MLhIv">
+                  <field name="NUM">Infinity</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="autoRotateCamera" id="yY{N+Pvxw8zx@G@E+`-C">
+                  <field name="ON_OFF">ON</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="g;c0*ADt0d*I2BKn{e35">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="369.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
